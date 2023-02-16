@@ -9,15 +9,13 @@ compatibility:
   - vscode
 about: docs/about.md
 usage: docs/usage.md
-use-case: docs/use-case.md
-implementation: docs/implementation.md
 technologies: # Ref: https://docs.stackspot.com/docs/create-stacks/yaml-files/yaml/#technologies
   - "Docker"
   - "Python"
 types:
   - app
 inputs:
-  - label: Container name
+  - label: Type your container name
     type: text
     name: container_name
     required: true
