@@ -4,28 +4,20 @@ display-name: vscode-devcontainer-python-plugin
 picture: plugin.png
 category: backend # Ref: https://docs.stackspot.com/docs/create-stacks/yaml-files/plugin/#category
 compatibility:
-  - java
-  - spring
+  - python
+  - docker
+  - vscode
 about: docs/about.md
 usage: docs/usage.md
 use-case: docs/use-case.md
 implementation: docs/implementation.md
 technologies: # Ref: https://docs.stackspot.com/docs/create-stacks/yaml-files/yaml/#technologies
-  - "Api"
+  - "Docker"
+  - "Python"
 types:
   - app
 inputs:
-  - label: Input Example
+  - label: Container name
     type: text
-    name: example
-    default: any text
-  - label: Example of number
-    type: int
-    name: any_number
-    default: "10"
-  - label: Example of list
-    type: multiselect
-    name: any_list
-    items:
-      - item1
-      - item2
+    name: container_name
+    required: true
